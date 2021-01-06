@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const besked = require('../public/json/besked.json')
+const besked = require('../../public/json/besked.json')
 
 
 router.get('/', (req,res, next)=>{

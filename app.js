@@ -14,9 +14,9 @@ const myTestModel = mongoose.model('Test', new mongoose.Schema({name: String}));
 
 
 // her skabes router forbindelserne
-const patientRouter = require('./routes/patient')
-const behandlingRouter =require('./routes/behandling')
-const nyhederRouter = require('./routes/nyheder')
+const patientRouter = require('./api/routes/patient')
+const behandlingRouter =require('./api/routes/behandling')
+const nyhederRouter = require('./api/routes/nyheder')
 
 app.use(express.static('public'))
 
