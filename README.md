@@ -46,3 +46,12 @@ vil gøre det detached, så det ikke fastlåser din terminal
 du kan stoppe det igen, ved at finde container id med docker ps
 og stoppe det med 
 docker stop [docker_container_id]
+
+
+----------------------------------------------------
+Socket projekt
+github link: https://github.com/yokarak/SocketProjects
+
+man ville kunne bruge de induviduelle ip's på hver patient, til at skabe en forbindelse ved brug af http
+man kan tage udgangs punkt i "Serverbasic" og "Clientbasic" som var på 2 forskellige bærbare som snakkede sammen over et wifi-hotstop
+(pga. skolens strenge regler i deres netværk)
