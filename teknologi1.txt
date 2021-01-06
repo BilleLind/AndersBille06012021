@@ -1,0 +1,20 @@
+1. Teknologispørgsmål
+En del af Tandprotects IT løsning skal være en database, som indeholder oplysninger om klinikkernes kunder,
+og hvilken kategori af kunde de er (det vurdere efter deres behandlingsforløb hvor ofte de skal til tandlægen).
+Det er ikke en egentlig patientjournal, men et uddrag der sikrer, at man kan sende kunderne indkaldelse til rutinemæssigt tandeftersyn,
+og sende information om tilbud, ferier og anden relevant information i forhold til kundens behov.
+
+I vælger, at denne information lagres i en SQL-database, og kan tilgås via et webinterface,
+hvis man har login som administrator. Hvilke forholdsregler skal Tandprotect tage,
+for at lagre disse data i henhold til GDPR lovgivningen?
+--------------------------------------------------------
+
+man kan udnytte det at det ikke er en aktuel patientjournal, hvilket betyder at den findes et andet sted.
+dette vil gøre det muligt at Pseudonymisering eller hashe de identificerende, hvor man så har de korresponderende gemt i patient journalen
+så man altid kan tilgå den rigtige patients information
+
+yderliger kan man encryptere dataen der er opbevaret
+
+ved at bruge encryption kan man begrænse hvad der kan ses i forskellige dataset
+dog ved at have implementeret adgangds kontrollere kan man begrænse hvem der har adgang
+til at se selv det encrypterede eller Pseudonymiserede data.

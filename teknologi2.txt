@@ -1,0 +1,15 @@
+2. Teknologispørgsmål
+Persondataforordningen kræver, at du skal indføre passende tekniske og organisatoriske foranstaltninger
+for at beskytte din virksomheds personoplysninger.
+
+Du skal vurdere hvordan en “passende” sikkerhed implementeres i virksomheden.
+Beskriv minimum to tekniske foranstaltninger, som kan indføres for at begrænse et læk af personfølsomme oplysninger fra databasen.
+-----------------------------------------------------------------------------
+
+en adgangs kontroller er en god start, dette kan implementeres ved brug af roller eller i forhold til login/password (altså pr. ansatte)
+eftersom det er en tandlæge så ville en pr. ansat adgang fungere godt, da man for det meste kun har med den samme læge at gøre
+hvor hvis det er en anden, kan de anmode adgang til patientens information igennem den læge der har adgang.
+
+eftersom det er data som cpr, navn. tlf og email der måske gemmes. så ville jeg anbefale at man encrypterede dataen der blev gemt
+jeg vil mene at man burde bruge "salt" det med mere en 16 tegn for at sikre dets sikkerhed
+yderligere kan man vælge at anvende "peppering" som er et ekstra lag oven på "salt"
