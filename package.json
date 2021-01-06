@@ -1,0 +1,23 @@
+{
+  "name": "andersbille06012021",
+  "version": "1.0.0",
+  "description": "Eksamens projekt",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yokarak/AndersBille06012021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yokarak/AndersBille06012021/issues"
+  },
+  "homepage": "https://github.com/yokarak/AndersBille06012021#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
