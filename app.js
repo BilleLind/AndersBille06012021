@@ -3,6 +3,7 @@ const app = express();
 const path = require('path')
 
 //const htmlRouter = require('./routes/html')
+const patientRouter = require('./routes/patient')
 
 app.use(express.static('public'))
 
