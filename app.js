@@ -4,6 +4,8 @@ const path = require('path')
 
 //const htmlRouter = require('./routes/html')
 const patientRouter = require('./routes/patient')
+const behandlingRouter =require('./routes/behandling')
+const nyhederRouter = require('./routes/nyheder')
 
 app.use(express.static('public'))
 
@@ -20,5 +22,8 @@ app.get('/kontakt', (req,res,next)=>{
 
 //app.use('/',htmlRouter)
 
+app.use('/patient', patientRouter);
+app.use('/nyheder', nyhederRouter);
+app.use('/behandling', behandlingRouter);
 
 module.exports = app;
