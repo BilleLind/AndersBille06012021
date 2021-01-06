@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+    web:
+      build: 
+        context: .
+      ports:
+        - 3963:3963
+      volumes:
+        - .:/src
+      command: npm start
+      

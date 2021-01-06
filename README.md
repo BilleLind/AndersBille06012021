@@ -36,3 +36,13 @@ docker run -p 3963:3963 -d andersbille06012021
 -p 3963:3963 specificere hvilken port det skal køre på
 den første er den port man skal bruge efter localhost og den første er det man "lytter" på inde i server.js
 -d gør at instancen af docker gøre "detached" så man ikke låser en kommandopromt til eller gør det umuligt at ændre noget imens serveren kører
+
+------------------
+docker compose anvender dockerfile til at gøre det mere simpelt at starte et projekt op
+i compose kan man anvende flere end en dockerfile, det kan være som f.eks. en dockerfile til nodejs og mongodb
+
+docker compose up -d 
+vil gøre det detached, så det ikke fastlåser din terminal
+du kan stoppe det igen, ved at finde container id med docker ps
+og stoppe det med 
+docker stop [docker_container_id]
