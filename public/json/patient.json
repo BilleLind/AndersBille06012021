@@ -1,0 +1,20 @@
+{
+    "patient": [{
+        "Navn": "abc",
+        "Fødselsdato": "11/11/2000",
+        "E-mailadresse": "abc@gmail.com"
+    },
+    {
+        "Navn": "bde",
+        "Fødselsdato": "11/11/2000",
+        "E-mailadresse": "bde@gmail.com"
+    },
+    {
+        "Navn": "qwe",
+        "Fødselsdato": "11/11/2000",
+        "E-mailadresse": "qwe@gmail.com"
+    }
+
+
+]
+}

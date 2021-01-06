@@ -1,12 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const patient = [{
-
-}]
+const patient = require('../public/json/patient.json')
 
 router.get('/', (req,res, next)=>{
     res.status(200).json({
-        message:"get => /patient"
+        patient
     })
 })
 router.get('/:id', (req,res, next)=>{

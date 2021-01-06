@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-
+const behandling = require('../public/json/behandling.json')
 
 router.get('/', (req,res, next)=>{
     res.status(200).json({
-        message:"get => /nyheder"
+        behandling
     })
 })
 router.get('/:id', (req,res, next)=>{

@@ -1,0 +1,25 @@
+{
+    "beskeder": [
+        {
+            "Til":"x",
+            "Fra": "y",
+            "Tekst": "Hvor er z henne?",
+            "Platform": "messenger",
+            "Dato": "21/21/2021"
+        },
+        {
+            "Til":"y",
+            "Fra": "x",
+            "Tekst": "Var han ikke henne ved dig?",
+            "Platform": "messenger",
+            "Dato": "21/21/2021"
+        },
+        {
+            "Til":"x",
+            "Fra": "y",
+            "Tekst": "Han var da lige så lang væk fra mig som dig!",
+            "Platform": "messenger",
+            "Dato": "21/21/2021"
+        }
+    ]
+}
