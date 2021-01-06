@@ -2,6 +2,9 @@
 const express = require('express');
 const app = express();
 const path = require('path')
+const bodyParser = require('body-parser')
+
+
 //her initialiceres mongoose 
 const mongoose = require('mongoose')
 //const htmlRouter = require('./routes/html')
@@ -19,6 +22,9 @@ const behandlingRouter =require('./api/routes/behandling')
 const nyhederRouter = require('./api/routes/nyheder')
 
 app.use(express.static('public'))
+
+
+app.use(bodyParser.json())
 
 app.get('/', (req,res,next)=>{
     res.sendFile(path.join(__dirname+'/public/html/forside.html'))

@@ -1,25 +1,38 @@
 const express = require('express');
+const mongoose  = require('mongoose');
 const router = express.Router();
-const patient = require('../../public/json/patient.json')
+const Patient = require('../models/patient')
 
 router.get('/', (req,res, next)=>{
     res.status(200).json({
-        patient
+        
     })
 })
 router.get('/:id', (req,res, next)=>{
 
-    var result =patient.patient[req.params.id]
 
     res.status(200).json({
-        result
+    
     })
 })
 
 router.post('/',(req,res,next)=>{
-    res.status(201).json({
-        message: "Operation gennemført"
+    //her anvender jeg min model (patient) som indeholder et database schema
+    //hvori der er specificeret hvad der må og skal gemmes i databasen
+    const patient = new Patient({
+        _id: new mongoose.Types.ObjectId(),
+        navn: req.body.navn,
+        foedselsdato: req.body.foedselsdato,
+        eMail: req.body.eMail
     })
+    patient.save().then((result =>{
+        if(result){
+            res.status(201).json({patient:result,
+            besked: 'patient oprettet'})
+        } else{
+            res.status(404).json({message:'fejl under oprettelse af patient'})
+        }
+    }))
 })
 
 router.delete('/',(req,res,next)=>{
