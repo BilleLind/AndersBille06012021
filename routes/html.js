@@ -1,12 +1,14 @@
 const express = require('express');
 const router = express.Router()
 const path = require('path')
-
+const fs = require('fs')
 
 
 
 router.get('/', (req,res,next)=>{
-    res.sendFile('\public\html\forside.html')
+    const forside = fs.readFileSync('forside.html')
+
+    res.sendFile(forside)
 })
 
 

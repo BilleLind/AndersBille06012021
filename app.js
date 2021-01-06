@@ -11,8 +11,6 @@ const mongoose = require('mongoose')
 
 //.connect bruges til at skabe forbindelse til mongodb
 mongoose.connect('mongodb://localhost:27017/myapp', {useNewUrlParser:true, useUnifiedTopology:true});
-//en lille test af mongoose forbindelsen
-const myTestModel = mongoose.model('Test', new mongoose.Schema({name: String}));
 
 
 

@@ -4,16 +4,27 @@ const router = express.Router();
 const Patient = require('../models/patient')
 
 router.get('/', (req,res, next)=>{
-    res.status(200).json({
-        
-    })
+    
+    Patient.find().exec().then((pJson =>{
+        const svar = {
+            besked: "Det lykkes at modtage filerne",
+            data: pJson
+        }
+        res.status(200).json(svar)
+    })).catch((err =>{
+        res.status(500).json({besked: err})
+    }))
 })
 router.get('/:id', (req,res, next)=>{
 
-
-    res.status(200).json({
+    Patient.findOne(req.body._id).exec().then((pJson =>{
+        res.status(200).json({
+            pJson
+        })
+    })).catch((err =>{
+        res.status(500).json({besked: err})
+    }))
     
-    })
 })
 
 router.post('/',(req,res,next)=>{
@@ -32,6 +43,8 @@ router.post('/',(req,res,next)=>{
         } else{
             res.status(404).json({message:'fejl under oprettelse af patient'})
         }
+    })).catch((err =>{
+        res.status(500).json({besked: err})
     }))
 })
 
