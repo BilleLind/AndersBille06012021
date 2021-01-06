@@ -1,0 +1,16 @@
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+a:visited{
+    color: blue;
+}
+
+a:hover {
+    color: crimson;
+}
+
+#velkommen {
+    border-bottom: 1px solid black;
+}

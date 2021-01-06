@@ -1,27 +1,36 @@
-<!DOCTYPE html>>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Forside</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="../css/styles.css" rel="stylesheet">
     </head>
 
     <body>
-        <h1>Velkommen til Protect</h1>
+        <div class="container my-5">
+        <h1 id="velkommen">Velkommen til TandProtect</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis enim lacus, nec consequat augue placerat quis. Fusce a ligula ac massa vehicula eleifend. Cras tristique dui quis porta viverra. Sed fermentum gravida efficitur. Duis sed nulla tellus. Pellentesque faucibus enim eget dui consectetur tristique. Donec sed semper neque, sed aliquet dolor.</p>
         
-        <nav>
-            <a href="/">Forside</a>
-            <a href="/API">API</a>
-            <a href="/kontakt">Kontakt</a>
+        <nav class="d-flex flex-column flex-md-row align-items-center bg-light border-bottom border-top">
+            <a class="p-2" href="/">Forside</a>
+            <a class="p-2" href="/API">API</a>
+            <a class="p-2" href="/kontakt">Kontakt</a>
         </nav>
 
-        <div>
-            <ul>
-                <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br><img src="https://i.picsum.photos/id/756/200/200.jpg?hmac=-fG1ZTuVYfQwwG3YNud2RtcOvYGcI86kRjc1pVQvO6c"></li>
+        <div class="container">
+            <div class="flex-column w-50">
+            <ul class="list-group">
+                <li class="list-group-item "><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br><img src="https://i.picsum.photos/id/756/200/200.jpg?hmac=-fG1ZTuVYfQwwG3YNud2RtcOvYGcI86kRjc1pVQvO6c"></li>
             </ul>
         </div>
-
+        <div class="flex-column w-50">
+            <ul class="list-group ">
+                <li class="list-group-item"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br><img src="https://i.picsum.photos/id/756/200/200.jpg?hmac=-fG1ZTuVYfQwwG3YNud2RtcOvYGcI86kRjc1pVQvO6c"></li>
+            </ul>
+        </div>
+        </div>
+    </div>
     </body>
 
 </html>
