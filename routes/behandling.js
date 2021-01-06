@@ -9,8 +9,8 @@ router.get('/', (req,res, next)=>{
 })
 router.get('/:id', (req,res, next)=>{
     res.status(200).json({
-        message:"get => /nyheder" + req.body.id
-    })
+        message:"get => /nyheder" 
+        })
 })
 
 router.post('/',(req,res,next)=>{
@@ -26,7 +26,7 @@ router.delete('/',(req,res,next)=>{
 })
 router.delete('/:id',(req,res,next)=>{
     res.status(201).json({
-        message: ("Operation gennemført" + req.body.id)
+        message: "Operation gennemført"
     })
 })
 router.put('/',(req,res,next)=>{
