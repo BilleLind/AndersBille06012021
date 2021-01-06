@@ -35,3 +35,6 @@ router.put('/',(req,res,next)=>{
         path: req.params
     })
 })
+
+
+module.exports = router
